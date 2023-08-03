@@ -40,10 +40,10 @@
             app:boxBackgroundMode="outline"
             app:boxStrokeColor="@color/hl_official_colour"
             app:boxStrokeErrorColor="@color/red"
-            app:errorTextColor="@color/red"
-            app:errorIconTint="@color/red"
             app:boxStrokeWidth="@dimen/width_divider"
             app:errorEnabled="true"
+            app:errorIconTint="@color/red"
+            app:errorTextColor="@color/red"
             app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -67,11 +67,11 @@
             app:boxBackgroundMode="outline"
             app:boxStrokeColor="@color/hl_official_colour"
             app:boxStrokeErrorColor="@color/red"
-            app:errorTextColor="@color/red"
-            app:errorIconTint="@color/red"
-            app:errorContentDescription=""
             app:boxStrokeWidth="@dimen/width_divider"
+            app:errorContentDescription=""
             app:errorEnabled="true"
+            app:errorIconTint="@color/red"
+            app:errorTextColor="@color/red"
             app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -107,7 +107,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_container" />
+        app:layout_constraintTop_toBottomOf="@+id/login_container"
+        tools:visibility="visible" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

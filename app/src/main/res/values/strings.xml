@@ -8,4 +8,7 @@
     <string name="pass">Password1</string>
     <string name="invalid_id">Invalid ID</string>
     <string name="incorrect_password">Incorrect password</string>
+    <string name="nav_active_complaints">Active Complaints</string>
+    <string name="nav_all_complaints">All Complaints</string>
+    <string name="nav_preferences">Preferences</string>
 </resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/vec_sel_all_complaints" android:state_enabled="true" />
+    <item android:drawable="@drawable/vec_unsel_all_complaints" android:state_enabled="false" />
+
+</selector>
