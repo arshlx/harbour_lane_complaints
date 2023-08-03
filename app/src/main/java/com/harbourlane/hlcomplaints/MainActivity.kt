@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
                         else -> {
                             getSharedPreferences(LOGIN, MODE_PRIVATE)
                                 .edit().putBoolean(LOGGED_IN, true).apply()
+                            finish()
                             startActivity(Intent(this@MainActivity, DashboardActivity::class.java))
                         }
                     }
@@ -61,8 +62,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun enableLoginBtn() {
+        resetErrors()
         binding.apply {
-            loginBtn.isEnabled = !idEdt.text.isNullOrEmpty() && !passwordEdt.text.isNullOrEmpty()
+            loginBtn.apply {
+                isEnabled = !idEdt.text.isNullOrEmpty() && !passwordEdt.text.isNullOrEmpty()
+               /* if (isEnabled) setBackgroundColor(applicationContext.getColor(R.color.hl_official_colour)) else setBackgroundColor(
+                    applicationContext.getColor(R.color.color_divider)
+                )*/
+            }
+
         }
     }
 }

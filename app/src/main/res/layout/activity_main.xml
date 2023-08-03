@@ -39,6 +39,9 @@
             app:boxBackgroundColor="@color/color_transparent"
             app:boxBackgroundMode="outline"
             app:boxStrokeColor="@color/hl_official_colour"
+            app:boxStrokeErrorColor="@color/red"
+            app:errorTextColor="@color/red"
+            app:errorIconTint="@color/red"
             app:boxStrokeWidth="@dimen/width_divider"
             app:errorEnabled="true"
             app:hintTextColor="@color/black">
@@ -63,6 +66,10 @@
             app:boxBackgroundColor="@color/color_transparent"
             app:boxBackgroundMode="outline"
             app:boxStrokeColor="@color/hl_official_colour"
+            app:boxStrokeErrorColor="@color/red"
+            app:errorTextColor="@color/red"
+            app:errorIconTint="@color/red"
+            app:errorContentDescription=""
             app:boxStrokeWidth="@dimen/width_divider"
             app:errorEnabled="true"
             app:hintTextColor="@color/black">
@@ -96,8 +103,8 @@
         android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_container" />
