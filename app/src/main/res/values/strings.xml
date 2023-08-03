@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HL Complaints</string>
+    <string name="user_id">User ID</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log in</string>
+    <string name="harbour_lane_logo">Harbour Lane logo</string>
+    <string name="id">TestId1</string>
+    <string name="pass">Password1</string>
+    <string name="invalid_id">Invalid ID</string>
+    <string name="incorrect_password">Incorrect password</string>
+</resources>
