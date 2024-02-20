@@ -43,4 +43,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_nav_menu" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_new_complaint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_normal"
+        android:backgroundTint="@color/hl_official_colour"
+        android:src="@drawable/vec_edit"
+        app:layout_constraintBottom_toTopOf="@+id/div"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
