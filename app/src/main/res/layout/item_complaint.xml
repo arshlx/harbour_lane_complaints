@@ -49,6 +49,21 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/txt_complaint_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_rectangle_bg"
+            android:backgroundTint="@color/red"
+            android:paddingHorizontal="@dimen/space_medium"
+            android:paddingVertical="@dimen/space_small"
+            android:textAppearance="@style/text_style_med_header01"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/img_call"
+            app:layout_constraintStart_toEndOf="@+id/txt_invoice"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Pending" />
+
+        <TextView
             android:id="@+id/txt_complaint_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,7 +73,7 @@
             android:textAppearance="@style/text_style_desc01"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/img_call"
-            tools:text="My furniture is broken and I want a refund as soon as possible. Please help."/>
+            tools:text="My furniture is broken and I want a refund as soon as possible. Please help." />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

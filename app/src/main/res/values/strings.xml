@@ -11,4 +11,6 @@
     <string name="nav_active_complaints">Active Complaints</string>
     <string name="nav_all_complaints">All Complaints</string>
     <string name="nav_preferences">Preferences</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

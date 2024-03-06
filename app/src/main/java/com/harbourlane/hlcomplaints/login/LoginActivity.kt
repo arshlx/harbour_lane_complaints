@@ -1,20 +1,21 @@
-package com.harbourlane.hlcomplaints
+package com.harbourlane.hlcomplaints.login
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doOnTextChanged
-import com.harbourlane.hlcomplaints.databinding.ActivityMainBinding
+import com.harbourlane.hlcomplaints.R
+import com.harbourlane.hlcomplaints.dashboard.DashboardActivity
+import com.harbourlane.hlcomplaints.databinding.ActivityLoginBinding
 import com.harbourlane.hlcomplaints.global_objects.Constants.LOGGED_IN
 import com.harbourlane.hlcomplaints.global_objects.Constants.LOGIN
-import com.harbourlane.hlcomplaints.global_objects.DashboardActivity
 
-class MainActivity : AppCompatActivity() {
-    private var _binding: ActivityMainBinding? = null
+class LoginActivity : AppCompatActivity() {
+    private var _binding: ActivityLoginBinding? = null
     private val binding get() = _binding!!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        _binding = ActivityMainBinding.inflate(layoutInflater)
+        _binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         editTextSetup()
     }
@@ -46,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                             getSharedPreferences(LOGIN, MODE_PRIVATE)
                                 .edit().putBoolean(LOGGED_IN, true).apply()
                             finish()
-                            startActivity(Intent(this@MainActivity, DashboardActivity::class.java))
+                            startActivity(Intent(this@LoginActivity, DashboardActivity::class.java))
                         }
                     }
                 }
@@ -66,9 +67,9 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             loginBtn.apply {
                 isEnabled = !idEdt.text.isNullOrEmpty() && !passwordEdt.text.isNullOrEmpty()
-               /* if (isEnabled) setBackgroundColor(applicationContext.getColor(R.color.hl_official_colour)) else setBackgroundColor(
-                    applicationContext.getColor(R.color.color_divider)
-                )*/
+                /* if (isEnabled) setBackgroundColor(applicationContext.getColor(R.color.hl_official_colour)) else setBackgroundColor(
+                     applicationContext.getColor(R.color.color_divider)
+                 )*/
             }
 
         }
