@@ -3,7 +3,7 @@
     <style name="Base.Theme.HarbourLaneComplaints" parent="Theme.Material3.Light">
         <!-- Customize your light theme here. -->
          <item name="colorPrimary">@color/hl_official_colour</item>
-        <item name="colorAccent">#d9cdb5</item>
+        <item name="colorAccent">#000000</item>
         <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
     </style>
 

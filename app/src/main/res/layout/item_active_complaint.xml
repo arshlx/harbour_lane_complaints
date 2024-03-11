@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/space_normal"
     android:background="@color/white"
     app:cardCornerRadius="@dimen/space_normal"
     app:strokeColor="@color/color_divider"
@@ -64,15 +65,39 @@
             tools:text="Pending" />
 
         <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_normal"
+            android:textAppearance="@style/text_style_desc01"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/img_call"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_complaint_status"
+            tools:text="Alex Hunt" />
+
+        <TextView
+            android:id="@+id/txt_complaint_number"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:layout_marginEnd="@dimen/space_normal"
+            android:textAppearance="@style/text_style_desc01"
+            app:layout_constraintEnd_toStartOf="@+id/img_call"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_name"
+            tools:text="2024/AUB/JAN" />
+
+        <TextView
             android:id="@+id/txt_complaint_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_medium"
             android:ellipsize="end"
-            android:maxLines="3"
+            android:maxLines="2"
             android:textAppearance="@style/text_style_desc01"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/img_call"
+            app:layout_constraintTop_toBottomOf="@+id/txt_complaint_number"
             tools:text="My furniture is broken and I want a refund as soon as possible. Please help." />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
