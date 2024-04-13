@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dashboard.NewEditComplaintsActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/invoice_edt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_normal"
+        android:hint="@string/invoice_num"
+        app:boxBackgroundColor="@color/color_transparent"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeWidth="@dimen/width_divider"
+        app:errorEnabled="true"
+        app:hintTextAppearance="@style/text_style_med_header02">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/invoice_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textAppearance="@style/text_style_med_header02" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cust_name_edt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/cust_name"
+        android:layout_marginHorizontal="@dimen/space_normal"
+        app:boxBackgroundColor="@color/color_transparent"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeWidth="@dimen/width_divider"
+        app:errorEnabled="true"
+        app:hintTextAppearance="@style/text_style_med_header02">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cust_name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textAppearance="@style/text_style_med_header02" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/complaint_description_edt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/complaint_description"
+        app:boxBackgroundColor="@color/color_transparent"
+        android:layout_marginHorizontal="@dimen/space_normal"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeWidth="@dimen/width_divider"
+        app:errorEnabled="true"
+        app:hintTextAppearance="@style/text_style_med_header02">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/complaint_description_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textAppearance="@style/text_style_med_header02" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/store_name_edt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/complaint_description"
+        app:boxBackgroundColor="@color/color_transparent"
+        android:layout_marginHorizontal="@dimen/space_normal"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeWidth="@dimen/width_divider"
+        app:errorEnabled="true"
+        app:hintTextAppearance="@style/text_style_med_header02">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/store_name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="text"
+            android:textAppearance="@style/text_style_med_header02" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/space_medium"
+        app:cardCornerRadius="@dimen/space_normal"
+        app:strokeColor="@color/color_divider"
+        app:strokeWidth="@dimen/width_divider">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="@dimen/space_normal">
+
+            <ImageView
+                android:id="@+id/img_add_picture"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/vec_add_picture"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_add_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_normal"
+                android:textAlignment="center"
+                android:textAppearance="@style/text_style_med_header02"
+                android:textColor="?attr/colorControlNormal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_add_picture"
+                android:text="@string/attach_pictures" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

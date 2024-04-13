@@ -21,6 +21,9 @@ class DashboardActivity : AppCompatActivity(), PositionInterface {
         _binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setUpBottomNav()
+        binding.btnNewComplaint.setOnClickListener {
+
+        }
     }
 
     private fun setUpBottomNav() {

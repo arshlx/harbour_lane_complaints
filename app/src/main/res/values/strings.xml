@@ -13,4 +13,9 @@
     <string name="nav_preferences">Preferences</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_new_complaint">Create new complaint</string>
+    <string name="invoice_num">Invoice Number</string>
+    <string name="cust_name">Customer Name</string>
+    <string name="attach_pictures">Attach Media</string>
+    <string name="complaint_description">Description</string>
 </resources>

@@ -49,8 +49,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/space_normal"
         android:backgroundTint="@color/hl_official_colour"
-        android:src="@drawable/vec_edit"
+        android:src="@drawable/vec_add"
         app:layout_constraintBottom_toTopOf="@+id/div"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/create_new_complaint" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
