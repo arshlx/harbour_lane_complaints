@@ -15,4 +15,10 @@ class NewEditComplaintsActivity : AppCompatActivity() {
         _binding = ActivityNewEditComplaintsBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
+
+    private fun setupViews(){
+        binding.apply {
+
+        }
+    }
 }

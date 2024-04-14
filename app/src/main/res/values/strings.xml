@@ -18,4 +18,9 @@
     <string name="cust_name">Customer Name</string>
     <string name="attach_pictures">Attach Media</string>
     <string name="complaint_description">Description</string>
+    <string name="store">Store</string>
+    <string name="create">Create</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="add_items">Add Items</string>
 </resources>
