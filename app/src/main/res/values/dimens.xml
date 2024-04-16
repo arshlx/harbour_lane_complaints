@@ -16,4 +16,5 @@
     <dimen name="text_normal">16sp</dimen>
     <dimen name="btn_height">60dp</dimen>
     <dimen name="title_txt_size">24sp</dimen>
+    <dimen name="item_recycler_height">300dp</dimen>
 </resources>

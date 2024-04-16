@@ -25,12 +25,12 @@
     </style>
 
     <style name="text_style_desc01">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/text_normal</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="text_style_desc02">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/text_normal</item>
         <item name="android:textColor">@color/color_light_grey</item>
     </style>
 </resources>
